@@ -40,8 +40,8 @@ public class SecurityConfig {
                 .formLogin(
                         formLogin -> formLogin.loginPage("/user/login") // 기본 로그인 페이지 지정
                                 .defaultSuccessUrl("/user/login")                 // 로그인이 성공했다면
-                                .usernameParameter("name")              // 로그인 <input name="email">
-                                .usernameParameter("password")              // 컨트롤러로 보낼 때~~
+                                .usernameParameter("email")              // 로그인 <input name="email">
+                                                                         // 컨트롤러로 보낼 때~~
                 )
         // 로그아웃
                 .logout(
