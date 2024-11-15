@@ -69,7 +69,7 @@ public class MemberShipController {
             log.info("||"+principal.getName()+"||");
             log.info("===========================");
         }
-//        return "redirect:/board/list";
+//        return "redirect:/board/list"; d
 //        MemberShipDTO memberShipDTO1 =
 //        memberShipService.loadUserByUsername(principal.getName());
         return "/user/login";
